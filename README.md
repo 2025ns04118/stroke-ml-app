@@ -42,16 +42,20 @@ Predict whether a patient is likely to have a **stroke** (`stroke` = 1) or not (
 
 ## c. GitHub repository link
 
-`https://github.com/2025ns04118/stroke-ml-app`
+`<PASTE YOUR GITHUB REPOSITORY LINK HERE>`
 
-Live Streamlit app: `https://stroke-ml-app-beiy6eae4tequkjmdt4pjk.streamlit.app/`
+Live Streamlit app: `<PASTE YOUR STREAMLIT COMMUNITY CLOUD LINK HERE>`
 
 ```
 stroke-ml-app/
-|-- app.py                  Streamlit application
+|-- stroke_ml_assignment.ipynb  step-by-step notebook (split, train, evaluate, save)
+|-- app.py                  Streamlit application (tabs: performance, curves, leaderboard, patient what-if, about)
+|-- .streamlit/config.toml  app colour theme
 |-- requirements.txt        Python dependencies
 |-- README.md               this file
 |-- test_data.csv           20% test split (upload this in the app)
+|-- data/
+|   |-- healthcare-dataset-stroke-data.csv   original Kaggle file
 |-- model/
     |-- model_utils.py      preprocessing, the 5 models, oversampling, metrics
     |-- train_models.py     trains, evaluates and saves all models
@@ -62,11 +66,9 @@ stroke-ml-app/
 
 **Run locally**
 
-```
-pip install -r requirements.txt
-python model/train_models.py      # retrains and saves models, prints the metrics table
-streamlit run app.py
-```
+1. `pip install -r requirements.txt`
+2. Open `stroke_ml_assignment.ipynb` and run all cells top to bottom. This splits the data, trains the five models, prints the metrics and saves everything the app needs. (`python model/train_models.py` does the same from the command line.)
+3. `streamlit run app.py`, then upload `test_data.csv` in the sidebar.
 
 ## d. Models used
 
