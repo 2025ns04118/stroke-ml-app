@@ -44,7 +44,7 @@ Predict whether a patient is likely to have a **stroke** (`stroke` = 1) or not (
 
 `https://github.com/2025ns04118/stroke-ml-app`
 
-Live Streamlit app: `<PASTE YOUR STREAMLIT COMMUNITY CLOUD LINK HERE>`
+Live Streamlit app: `https://stroke-ml-app-beiy6eae4tequkjmdt4pjk.streamlit.app/`
 
 ```
 stroke-ml-app/
